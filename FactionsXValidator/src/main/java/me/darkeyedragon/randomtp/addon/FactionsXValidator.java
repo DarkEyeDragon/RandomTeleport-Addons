@@ -8,15 +8,19 @@ import net.prosavage.factionsx.manager.GridManager;
 import net.prosavage.factionsx.persist.data.FLocation;
 
 public class FactionsXValidator extends RandomAddon {
+
+    public FactionsXValidator() {
+        super.addRequiredPlugin(new BaseRequiredPlugin("FactionsX"));
+    }
+
     @Override
     public String getIdentifier() {
-        super.addRequiredPlugin(new BaseRequiredPlugin("FactionsX"));
         return "FactionsXValidator";
     }
 
     @Override
     public boolean isValid(RandomLocation randomLocation) {
-        Faction faction = GridManager.INSTANCE.getFactionAt(new FLocation(randomLocation.getX(), randomLocation.getZ(), randomLocation.getWorld().getName()));
+        Faction faction = new FLocation(randomLocation.getX(), randomLocation.getZ(), randomLocation.getWorld().getName()).getFaction();
         return faction.isWilderness() || faction.isWarzone();
     }
 }
