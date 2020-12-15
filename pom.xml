@@ -16,6 +16,7 @@
         <module>RedProtectValidator</module>
         <module>WorldGuardValidator</module>
         <module>FactionsXValidator</module>
+        <module>LandsValidator</module>
     </modules>
 
 
