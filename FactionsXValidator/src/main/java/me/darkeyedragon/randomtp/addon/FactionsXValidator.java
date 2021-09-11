@@ -1,8 +1,8 @@
 package me.darkeyedragon.randomtp.addon;
 
+import me.darkeyedragon.randomtp.api.addon.RandomAddon;
 import me.darkeyedragon.randomtp.api.world.location.RandomLocation;
 import me.darkeyedragon.randomtp.common.addon.BaseRequiredPlugin;
-import me.darkeyedragon.randomtp.common.addon.RandomAddon;
 import net.prosavage.factionsx.core.Faction;
 import net.prosavage.factionsx.persist.data.FLocation;
 
@@ -19,7 +19,7 @@ public class FactionsXValidator extends RandomAddon {
 
     @Override
     public boolean isValid(RandomLocation randomLocation) {
-        Faction faction = new FLocation(randomLocation.getX(), randomLocation.getZ(), randomLocation.getWorld().getName()).getFaction();
+        Faction faction = new FLocation(randomLocation.getBlockX(), randomLocation.getBlockZ(), randomLocation.getWorld().getName()).getFaction();
         return faction.isWilderness() || faction.isWarzone();
     }
 }
