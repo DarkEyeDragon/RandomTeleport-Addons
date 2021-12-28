@@ -17,6 +17,7 @@
         <module>WorldGuardValidator</module>
         <module>FactionsXValidator</module>
         <module>LandsValidator</module>
+        <module>KingdomsXValidator</module>
     </modules>
 
 
