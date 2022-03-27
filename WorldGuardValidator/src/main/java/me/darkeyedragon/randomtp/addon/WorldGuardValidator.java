@@ -4,9 +4,9 @@ import com.sk89q.worldedit.bukkit.BukkitAdapter;
 import com.sk89q.worldguard.WorldGuard;
 import com.sk89q.worldguard.protection.managers.RegionManager;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
+import me.darkeyedragon.randomtp.api.addon.RandomAddon;
 import me.darkeyedragon.randomtp.api.world.location.RandomLocation;
 import me.darkeyedragon.randomtp.common.addon.BaseRequiredPlugin;
-import me.darkeyedragon.randomtp.common.addon.RandomAddon;
 import me.darkeyedragon.randomtp.util.WorldUtil;
 import org.bukkit.Location;
 
