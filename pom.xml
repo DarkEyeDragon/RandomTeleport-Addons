@@ -42,7 +42,7 @@
     <dependencies>
         <dependency>
             <groupId>me.darkeyedragon.randomtp</groupId>
-            <artifactId>Common</artifactId>
+            <artifactId>Api</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
