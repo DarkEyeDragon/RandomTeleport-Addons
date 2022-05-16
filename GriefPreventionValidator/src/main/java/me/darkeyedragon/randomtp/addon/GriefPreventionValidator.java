@@ -1,8 +1,8 @@
 package me.darkeyedragon.randomtp.addon;
 
+import me.darkeyedragon.randomtp.api.addon.RandomAddon;
 import me.darkeyedragon.randomtp.api.world.location.RandomLocation;
 import me.darkeyedragon.randomtp.common.addon.BaseRequiredPlugin;
-import me.darkeyedragon.randomtp.common.addon.RandomAddon;
 import me.darkeyedragon.randomtp.util.WorldUtil;
 import me.ryanhamshire.GriefPrevention.Claim;
 import me.ryanhamshire.GriefPrevention.GriefPrevention;

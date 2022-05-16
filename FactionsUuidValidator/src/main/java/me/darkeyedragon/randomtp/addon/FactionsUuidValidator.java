@@ -3,9 +3,9 @@ package me.darkeyedragon.randomtp.addon;
 import com.massivecraft.factions.Board;
 import com.massivecraft.factions.FLocation;
 import com.massivecraft.factions.Faction;
+import me.darkeyedragon.randomtp.api.addon.RandomAddon;
 import me.darkeyedragon.randomtp.api.world.location.RandomLocation;
 import me.darkeyedragon.randomtp.common.addon.BaseRequiredPlugin;
-import me.darkeyedragon.randomtp.common.addon.RandomAddon;
 import me.darkeyedragon.randomtp.util.WorldUtil;
 import org.bukkit.Location;
 
@@ -15,7 +15,7 @@ import org.bukkit.Location;
 public class FactionsUuidValidator extends RandomAddon {
 
     public FactionsUuidValidator() {
-        super.addRequiredPlugin(new BaseRequiredPlugin("Factions", ""));
+        super.addRequiredPlugin(new BaseRequiredPlugin("Factions"));
     }
 
     @Override
